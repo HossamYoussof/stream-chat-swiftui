@@ -28,12 +28,12 @@ open class DefaultMarkdownFormatter: MarkdownFormatter {
     
     private let markdownParser: MarkdownParser
     
-    public init() {
+    open init() {
         markdownParser = MarkdownParser()
     }
         
     @available(iOS 15, *)
-    public func format(
+    open func format(
         _ string: String,
         attributes: AttributeContainer,
         layoutDirection: LayoutDirection
